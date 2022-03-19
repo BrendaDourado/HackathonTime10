@@ -4,6 +4,7 @@
       <nav>
         <router-link to="/">Ovos de páscoa caseiros</router-link> |
         <AppTopBar />
+        <OvosTabela/>
       </nav>
       <router-view />
     </div>
@@ -12,10 +13,12 @@
 
 <script>
 import AppTopBar from "../src/components/AppTopBar.vue";
+import OvosTabela from "../src/components/OvosTabela.vue";
 export default {
   name: "App",
   components: {
     AppTopBar,
+    OvosTabela
   },
 };
 </script>
