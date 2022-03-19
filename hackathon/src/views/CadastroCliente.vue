@@ -7,14 +7,16 @@
         apresentaremos os ovos que dão match com você.
       </p>
     </div>
-    <v-checkbox v-model="checkbox1" :label="`Chocolate branco:`"></v-checkbox>
-    <v-checkbox v-model="checkbox2" :label="` Nutella :`"></v-checkbox>
-    <v-checkbox v-model="checkbox3" :label="`Avelã:`"></v-checkbox>
-    <v-checkbox v-model="checkbox4" :label="` Nozes:`"></v-checkbox>
-    <v-checkbox v-model="checkbox5" :label="`Meio Amargo:`"></v-checkbox>
-    <v-checkbox v-model="checkbox6" :label="` 100% Cacau:`"></v-checkbox>
-    <v-checkbox v-model="checkbox7" :label="`Sem açucar:`"></v-checkbox>
-    <v-btn class="mr-4" type="submit"> enviar </v-btn>
+    <div class="form">
+      <v-checkbox v-model="checkbox1" :label="`Chocolate branco:`"></v-checkbox>
+      <v-checkbox v-model="checkbox2" :label="` Nutella :`"></v-checkbox>
+      <v-checkbox v-model="checkbox3" :label="`Avelã:`"></v-checkbox>
+      <v-checkbox v-model="checkbox4" :label="` Nozes:`"></v-checkbox>
+      <v-checkbox v-model="checkbox5" :label="`Meio Amargo:`"></v-checkbox>
+      <v-checkbox v-model="checkbox6" :label="` 100% Cacau:`"></v-checkbox>
+      <v-checkbox v-model="checkbox7" :label="`Sem açucar:`"></v-checkbox>
+      <v-btn class="mr-4" type="submit"> enviar </v-btn>
+    </div>
   </v-container>
 </template>
 <script>
@@ -35,8 +37,7 @@ export default {
 </script>
 
 <style scoped>
-v-container {
-  padding-bottom: 40px;
+.form {
 }
 h1 {
   font-size: 20px;
@@ -48,8 +49,8 @@ h1 {
   color: white;
 }
 .container {
-  margin-bottom: 100px;
-  padding: 30px;
+  margin-bottom: 80px;
+  padding: 0 10;
   width: 100%;
   height: 100vh;
   color: #fff;
