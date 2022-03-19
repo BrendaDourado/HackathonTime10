@@ -8,6 +8,19 @@
       ovos que surgem com a data. Por isso, resolvemos trazer para você os
       melhores ovos de Páscoa.
     </p>
+    <div class="form">
+      <v-form>
+        <v-row>
+          <v-col cols="12" sm="12">
+            <v-text-field
+              v-model="first"
+              label="Pesquisar produto"
+              solo
+            ></v-text-field>
+          </v-col>
+        </v-row>
+      </v-form>
+    </div>
   </v-container>
 </template>
 
@@ -19,12 +32,16 @@ export default {
 
 <style>
 .home-img {
-     display: flex;
-     justify-content: center;
-     max-width: 100%;
-     height: 300px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: 300px;
 }
 .text-home {
   font-size: 14px;
+}
+.form {
+  display: flex;
+  justify-content: center;
 }
 </style>
