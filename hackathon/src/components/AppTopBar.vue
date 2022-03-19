@@ -3,7 +3,7 @@
     <v-app-bar hide-on-scroll app>
        <template v-slot:img="{ props }">
         <v-img
-          src="https://acegif.com/wp-content/gifs/dancing-rabbit-27.gif"
+          src="https://c.tenor.com/j7aN_bMw-xAAAAAC/chocolate-dessert.gif"
           scroll-target="#scrolling-techniques-2"
           fade-img-on-scroll
           scroll-threshold="500"
@@ -12,11 +12,11 @@
         ></v-img>
       </template>
       <v-spacer />
-      <v-toolbar-title><h3><strong>Ovos de pascoa</strong> 🐇🍫 </h3></v-toolbar-title>
+      <v-toolbar-title><h3><strong>Ovos de páscoa</strong> 🐇🍫 </h3></v-toolbar-title>
       <v-spacer />
       <v-tooltip v-if="!$vuetify.theme.dark" bottom>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
+          <v-btn v-on="on" v-bind="attrs" color="whrite" small fab @click="darkMode">
             <v-icon class="mr-1">mdi-moon-waxing-crescent</v-icon>
           </v-btn>
         </template>
@@ -25,7 +25,7 @@
 
       <v-tooltip v-else bottom>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
+          <v-btn v-on="on" v-bind="attrs" color="black" small fab @click="darkMode">
             <v-icon>mdi-white-balance-sunny</v-icon>
           </v-btn>
         </template>
@@ -33,34 +33,33 @@
       </v-tooltip>
     </v-app-bar>
     <v-bottom-navigation :value="value" color="#6d6d6d" app grow>
-      <router-link to="/">
+      <router-link to="/home">
         <v-btn>
           <span>Início</span>
-
           <v-icon>mdi-home</v-icon>
         </v-btn>
       </router-link>
+        <router-link to="/listaovos">
 
-      <router-link to="/listaclubes">
         <v-btn>
           <span>lojas</span>
-          <v-icon>mdi-</v-icon>
+          <v-icon>mdi-store</v-icon>
         </v-btn>
-      </router-link>
-
-      <router-link to="/login">
+        </router-link>
+     
+        <router-link to="/listaovos">
         <v-btn>
           <span>Login</span>
           <v-icon>mdi-account</v-icon>
         </v-btn>
-      </router-link>
+        </router-link>
 
-      <router-link to="/sobre">
+        
         <v-btn>
           <span>Sobre</span>
           <v-icon>mdi-information</v-icon>
         </v-btn>
-      </router-link>
+
 
      <!-- <router-link to="/cadastrousuario">
         <v-btn>
@@ -103,7 +102,7 @@ export default {
     }
     img {
         white-space: nowrap;
-        height: 600px
+        height: 60px
     }
 
 </style>
