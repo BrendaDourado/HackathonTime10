@@ -1,16 +1,7 @@
 <template>
      <div class="app-bottom-bar">
     <v-app-bar hide-on-scroll app>
-       <template v-slot:img="{ props }">
-        <v-img
-          src="https://c.tenor.com/j7aN_bMw-xAAAAAC/chocolate-dessert.gif"
-          scroll-target="#scrolling-techniques-2"
-          fade-img-on-scroll
-          scroll-threshold="500"
-          v-bind="props"
-         
-        ></v-img>
-      </template>
+      
       <v-spacer />
       <v-toolbar-title><h3><strong>Ovos de páscoa</strong> 🐇🍫 </h3></v-toolbar-title>
       <v-spacer />
@@ -47,18 +38,14 @@
         </v-btn>
         </router-link>
      
-        <router-link to="/listaovos">
+        <router-link to="/cadastroempresa">
         <v-btn>
-          <span>Login</span>
+          <span>Cadastro</span>
           <v-icon>mdi-account</v-icon>
         </v-btn>
         </router-link>
 
-        
-        <v-btn>
-          <span>Sobre</span>
-          <v-icon>mdi-information</v-icon>
-        </v-btn>
+    
 
 
      <!-- <router-link to="/cadastrousuario">
