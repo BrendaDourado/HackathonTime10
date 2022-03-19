@@ -19,10 +19,10 @@ export default {
 
 <style>
 .home-img {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  height: 400px;
+     display: flex;
+     justify-content: center;
+     max-width: 100%;
+     height: 300px;
 }
 .text-home {
   font-size: 14px;
