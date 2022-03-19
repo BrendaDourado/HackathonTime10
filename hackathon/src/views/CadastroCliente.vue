@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <div class="titulo">
-      <h1>O que você preza em um ovo de pácoa?!</h1>
+      <h1>O que você preza em um ovo de páscoa?!</h1>
       <p>
         Nos diga o que mais você gosta de saborear na páscoa, que lhe
         apresentaremos os ovos que dão match com você.
@@ -35,6 +35,9 @@ export default {
 </script>
 
 <style scoped>
+v-container {
+  padding-bottom: 40px;
+}
 h1 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -45,6 +48,7 @@ h1 {
   color: white;
 }
 .container {
+  margin-bottom: 100px;
   padding: 30px;
   width: 100%;
   height: 100vh;

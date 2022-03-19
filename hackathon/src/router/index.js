@@ -3,9 +3,9 @@ import VueRouter from "vue-router";
 import HomeIs from "../views/HomeIs.vue"
 import CadastroEmpresa from "../views/CadastroEmpresa.vue";
 import CadastroCliente from "../views/CadastroCliente.vue";
-import AnaliseEmpresa from "../views/AnaliseEmpresa.vue";
+/*import AnaliseEmpresa from "../views/AnaliseEmpresa.vue";
 import AnaliseSugestao from "../views/AnaliseSugestao.vue";
-import OvosLista from "../views/OvosLista.vue";
+import OvosLista from "../views/OvosLista.vue";*/
 
 Vue.use(VueRouter);
 
@@ -26,6 +26,7 @@ const routes = [
   name: "Formulário Cliente",
   component: CadastroCliente,
 },
+/*
 {
   path: "/analiseempresa",
   name: "Análise Empresa",
@@ -40,7 +41,7 @@ const routes = [
   path: "/ovoslista",
   name: "Lista de Ovos",
   component: OvosLista,
-},
+},*/
 ]
 
 const router = new VueRouter({

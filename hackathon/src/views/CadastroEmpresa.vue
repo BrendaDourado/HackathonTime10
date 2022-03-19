@@ -4,8 +4,8 @@
       <div>
         <h1>Faça seu Cadastro</h1>
         <p>
-          Se você gostou do nosso app e quer divigulgar os seus produtos aqui
-          tambem, faça o seu cadastro.
+          Se você gostou do nosso app e quer divulgar os seus produtos aqui
+          também, faça o seu cadastro.
         </p>
       </div>
       <form @submit.prevent="submit">
