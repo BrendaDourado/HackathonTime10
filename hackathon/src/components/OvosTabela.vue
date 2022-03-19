@@ -8,9 +8,9 @@
         <tr v-for="local of Locais" :key="local.id">
             <td>
             <img :src = "local.imagem"/> 
+            <h3 color ="black" > {{local.nome}}</h3>
+            <h3 color = "black" > {{local.sabor}} </h3>
             </td>
-            
-
         </tr>
       </tbody>
     </template>
