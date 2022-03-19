@@ -2,21 +2,15 @@
   <v-simple-table>
     <template v-slot:default>
       <thead>
-        <tr>
-          <th colspan="2" class="text-left">teste</th>
-          <th class="text-right">teste</th>
-        </tr>
+        
       </thead>
       <tbody>
-        <tr v-for="(local, index) of locais" :key="local.id">
-          <td>{{ index + 1 }}</td>
-          <td>
-            <v-avatar size="24">
-              <img :src="Local.imagem" :alt="Local.nome"/>
-            </v-avatar>
-            <span class="pl-2">{{ Local.imagem }}</span>
-          </td>
-          <td class="text-right">{{ Local.nome }}</td>
+        <tr v-for="local of Locais" :key="local.id">
+            <td>
+            <img :src = "local.imagem"/> 
+            </td>
+            
+
         </tr>
       </tbody>
     </template>
@@ -33,3 +27,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+    img {
+     display: flex;
+     justify-content: center;
+     max-width: 30%;
+     height: 50px;
+     border-radius: 50%
+}
+</style>
