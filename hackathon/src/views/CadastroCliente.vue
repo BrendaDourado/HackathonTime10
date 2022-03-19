@@ -7,16 +7,14 @@
         apresentaremos os ovos que dão match com você.
       </p>
     </div>
-    <div class="form">
-      <v-checkbox v-model="checkbox1" :label="`Chocolate branco:`"></v-checkbox>
-      <v-checkbox v-model="checkbox2" :label="` Nutella :`"></v-checkbox>
-      <v-checkbox v-model="checkbox3" :label="`Avelã:`"></v-checkbox>
-      <v-checkbox v-model="checkbox4" :label="` Nozes:`"></v-checkbox>
-      <v-checkbox v-model="checkbox5" :label="`Meio Amargo:`"></v-checkbox>
-      <v-checkbox v-model="checkbox6" :label="` 100% Cacau:`"></v-checkbox>
-      <v-checkbox v-model="checkbox7" :label="`Sem açucar:`"></v-checkbox>
-      <v-btn class="mr-4" type="submit"> enviar </v-btn>
-    </div>
+    <v-checkbox v-model="checkbox1" :label="`Chocolate branco:`"></v-checkbox>
+    <v-checkbox v-model="checkbox2" :label="` Nutella :`"></v-checkbox>
+    <v-checkbox v-model="checkbox3" :label="`Avelã:`"></v-checkbox>
+    <v-checkbox v-model="checkbox4" :label="` Nozes:`"></v-checkbox>
+    <v-checkbox v-model="checkbox5" :label="`Meio Amargo:`"></v-checkbox>
+    <v-checkbox v-model="checkbox6" :label="` 100% Cacau:`"></v-checkbox>
+    <v-checkbox v-model="checkbox7" :label="`Sem açucar:`"></v-checkbox>
+    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
   </v-container>
 </template>
 <script>
@@ -32,6 +30,13 @@ export default {
       checkbox7: false,
       checkbox8: false,
     };
+  },
+  methods: {
+    delay() {
+      setTimeout(() => {
+        this.$router.push("/analisesugestao");
+      }, 100);
+    },
   },
 };
 </script>
