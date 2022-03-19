@@ -1,22 +1,22 @@
 <template>
   <v-app>
-  <div id="app">
-    <nav>
-      <router-link to="/">Ovos de páscoa caseiros</router-link> |
-      <AppTopBar/>
-    </nav>
-    <router-view/>
-  </div>
+    <div id="app">
+      <nav>
+        <router-link to="/">Ovos de páscoa caseiros</router-link> |
+        <AppTopBar />
+      </nav>
+      <router-view />
+    </div>
   </v-app>
 </template>
 
 <script>
-import AppTopBar from "../src/components/AppTopBar.vue"
+import AppTopBar from "../src/components/AppTopBar.vue";
 export default {
-  name:"App",
-  components:{
-    AppTopBar
-  }
+  name: "App",
+  components: {
+    AppTopBar,
+  },
 };
 </script>
 

@@ -37,7 +37,6 @@
 
 <script>
 export default {
-  name: "FormCliente",
   data: () => ({
     name: "",
     telefone: "",
@@ -61,6 +60,6 @@ h1 {
   width: 100%;
   height: 100vh;
   color: #fff;
-  /*background-image: linear-gradient(180deg, #194b79, #19236f, #000204);*/
+  *background-image: linear-gradient(180deg, #194b79, #19236f, #000204);
 }
 </style>

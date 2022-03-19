@@ -1,7 +1,13 @@
 <template>
   <validation-observer ref="observer">
     <div class="container">
-      <h1>Faça seu Cadastro</h1>
+      <div>
+        <h1>Faça seu Cadastro</h1>
+        <p>
+          Se você gostou do nosso app e quer divigulgar os seus produtos aqui
+          tambem, faça o seu cadastro.
+        </p>
+      </div>
       <form @submit.prevent="submit">
         <validation-provider name="Name" rules="required|max:10">
           <v-text-field
@@ -55,6 +61,7 @@ export default {
 <style scoped>
 h1 {
   margin-bottom: 20px;
+  color: linear-gradient(180deg, #194b79, #19236f, #000204);
 }
 .container {
   padding: 30px;
