@@ -50,15 +50,10 @@ h1 {
   color: black;
 }
 
-.titulo {
-  color: white;
-}
 .container {
   margin-bottom: 80px;
   padding: 0 10;
   width: 100%;
   height: 100vh;
-  color: #fff;
-  background-image: linear-gradient(180deg, #194b79, #19236f, #082644);
 }
 </style>

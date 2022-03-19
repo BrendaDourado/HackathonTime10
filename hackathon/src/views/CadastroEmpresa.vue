@@ -53,17 +53,14 @@ export default {
   methods: {
     submit() {
       this.$refs.observer.validate();
-      
     },
-      delay(){
-        setTimeout(()=>{
-          this.$router.push('/analiseempresa')
-          
-          },100)
-
+    delay() {
+      setTimeout(() => {
+        this.$router.push("/analiseempresa");
+      }, 100);
+    },
   },
-}
-}
+};
 </script>
 
 <style scoped>
@@ -71,8 +68,6 @@ export default {
   padding: 30px;
   width: 100%;
   height: 100vh;
-  color: #fff;
-  background-image: linear-gradient(180deg, #194b79, #19236f, #000204);
 }
 btn {
   margin-bottom: 20px;
