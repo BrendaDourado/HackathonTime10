@@ -14,7 +14,7 @@
     <v-checkbox v-model="checkbox5" :label="`Meio Amargo:`"></v-checkbox>
     <v-checkbox v-model="checkbox6" :label="` 100% Cacau:`"></v-checkbox>
     <v-checkbox v-model="checkbox7" :label="`Sem açucar:`"></v-checkbox>
-    <v-btn class="mr-4" type="submit"> enviar </v-btn>
+    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
   </v-container>
 </template>
 <script>
@@ -31,7 +31,16 @@ export default {
       checkbox8: false,
     };
   },
-};
+   methods: {
+      delay(){
+        setTimeout(()=>{
+          this.$router.push('/analisesugestao')
+          
+          },100)
+
+  },
+}
+}
 </script>
 
 <style scoped>

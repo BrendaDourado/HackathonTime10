@@ -40,7 +40,14 @@
      
         <router-link to="/cadastroempresa">
         <v-btn>
-          <span>Cadastro</span>
+          <span>Cadastre para vender</span>
+          <v-icon>mdi-account</v-icon>
+        </v-btn>
+        </router-link>
+
+         <router-link to="/cadastrocliente">
+        <v-btn>
+          <span>SUGESTÃO</span>
           <v-icon>mdi-account</v-icon>
         </v-btn>
         </router-link>
