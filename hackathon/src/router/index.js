@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeIs from "../views/HomeIs.vue"
 import CadastroEmpresa from "../views/CadastroEmpresa.vue";
-import FormCliente from "../views/FormCliente.vue";
+import CadastroCliente from "../views/CadastroCliente.vue";
 
 Vue.use(VueRouter);
 
@@ -14,15 +14,15 @@ const routes = [
 
   },
   {
-    path: "/cadastroempresa",
-    name: "Cadastro de Empresa",
-    component: CadastroEmpresa,
-  },
-  {
-    path: "/formcliente",
-    name: "Formulário Cliente",
-    component: FormCliente,
-  },
+  path: "/cadastroempresa",
+  name: "Cadastro de Empresa",
+  component: CadastroEmpresa,
+},
+{
+  path: "/cadastrocliente",
+  name: "Formulário Cliente",
+  component: CadastroCliente,
+},
 ]
 
 const router = new VueRouter({
