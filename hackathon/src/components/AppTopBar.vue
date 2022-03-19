@@ -30,8 +30,8 @@
           <v-icon>mdi-home</v-icon>
         </v-btn>
       </router-link>
-        <router-link to="/listaovos">
 
+        <router-link to="/ovoslista">
         <v-btn>
           <span>lojas</span>
           <v-icon>mdi-store</v-icon>
@@ -46,8 +46,6 @@
         </router-link>
 
       
-    
-
 
      <!-- <router-link to="/cadastrousuario">
         <v-btn>
