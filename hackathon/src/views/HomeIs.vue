@@ -8,26 +8,29 @@
       ovos que surgem com a data. Por isso, resolvemos trazer para você os
       melhores ovos de Páscoa.
     </p>
-    <div class="form">
-      <v-form>
-        <v-row>
-          <v-col cols="12" sm="12">
-            <v-text-field
-              v-model="first"
-              label="Pesquisar produto"
-              solo
-            ></v-text-field>
-          </v-col>
-        </v-row>
-      </v-form>
-    </div>
+    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> Clique Aqui </v-btn>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "HomeIs",
-};
+  data: () => ({
+     name: "HomeIs",
+  }),
+methods: {
+    submit() {
+      this.$refs.observer.validate();
+      
+    },
+      delay(){
+        setTimeout(()=>{
+          this.$router.push('/cadastrocliente')
+          
+          },100)
+
+  },
+}
+}
 </script>
 
 <style>
