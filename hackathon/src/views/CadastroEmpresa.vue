@@ -13,7 +13,7 @@
           <v-text-field
             v-model="name"
             :counter="30"
-            label="Name"
+            label="Nome"
             required
           ></v-text-field>
         </validation-provider>
@@ -22,7 +22,7 @@
           <v-text-field
             v-model="Telefone"
             :counter="8"
-            label="Senha"
+            label="Telefone"
             required
           ></v-text-field>
         </validation-provider>
@@ -53,29 +53,23 @@ export default {
   methods: {
     submit() {
       this.$refs.observer.validate();
-      
     },
-      delay(){
-        setTimeout(()=>{
-          this.$router.push('/analiseempresa')
-          
-          },100)
-
+    delay() {
+      setTimeout(() => {
+        this.$router.push("/analiseempresa");
+      }, 100);
+    },
   },
-}
-}
+};
 </script>
 
 <style scoped>
-h1 {
-  margin-bottom: 20px;
-  color: linear-gradient(180deg, #194b79, #19236f, #000204);
-}
 .container {
   padding: 30px;
   width: 100%;
   height: 100vh;
-  color: #fff;
-  background-image: linear-gradient(180deg, #194b79, #19236f, #000204);
+}
+btn {
+  margin-bottom: 20px;
 }
 </style>

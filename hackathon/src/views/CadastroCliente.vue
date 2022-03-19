@@ -31,21 +31,18 @@ export default {
       checkbox8: false,
     };
   },
-   methods: {
-      delay(){
-        setTimeout(()=>{
-          this.$router.push('/analisesugestao')
-          
-          },100)
-
+  methods: {
+    delay() {
+      setTimeout(() => {
+        this.$router.push("/analisesugestao");
+      }, 100);
+    },
   },
-}
-}
+};
 </script>
 
 <style scoped>
-v-container {
-  padding-bottom: 40px;
+.form {
 }
 h1 {
   font-size: 20px;
@@ -53,15 +50,10 @@ h1 {
   color: black;
 }
 
-.titulo {
-  color: white;
-}
 .container {
-  margin-bottom: 100px;
-  padding: 30px;
+  margin-bottom: 80px;
+  padding: 0 10;
   width: 100%;
   height: 100vh;
-  color: #fff;
-  background-image: linear-gradient(180deg, #194b79, #19236f, #082644);
 }
 </style>
