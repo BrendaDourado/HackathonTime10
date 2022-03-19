@@ -36,7 +36,6 @@
             required
           ></v-text-field>
         </validation-provider>
-
         <v-btn class="mr-4" type="submit"> enviar </v-btn>
       </form>
     </div>
