@@ -14,33 +14,32 @@ const routes = [
     path: "/home",
     name: "Home",
     component: HomeIs,
-
   },
   {
-  path: "/cadastroempresa",
-  name: "Cadastro de Empresa",
-  component: CadastroEmpresa,
-},
-{
-  path: "/cadastrocliente",
-  name: "Formulário Cliente",
-  component: CadastroCliente,
-},
-{
-path: "/analiseempresa",
-name: "Análise Empresa",
- component: AnaliseEmpresa,
-},
-{
- path: "/analisesugestao",
- name: "Análise Sugestão",
- component: AnaliseSugestao,
-}, 
-{
-  path: "/OvosLista",
-  name: "Lista de Ovos",
-  component: OvosLista,
-},
+    path: "/cadastroempresa",
+    name: "Cadastro de Empresa",
+    component: CadastroEmpresa,
+  },
+  {
+    path: "/cadastrocliente",
+    name: "Formulário Cliente",
+    component: CadastroCliente,
+  },
+  {
+    path: "/analiseempresa",
+    name: "Análise Empresa",
+    component: AnaliseEmpresa,
+  },
+  {
+    path: "/analisesugestao",
+    name: "Análise Sugestão",
+    component: AnaliseSugestao,
+  },
+  {
+    path: "/ovoslista",
+    name: "Lista de Ovos",
+    component: OvosLista,
+  },
 ]
 
 const router = new VueRouter({
